@@ -14,9 +14,9 @@ def mulator_delay(delay=0, **kwargs):
                 serializer = args[1]
                 mulator = mulator_class(serializer, delay)
 
-                Async('mulator.tasks.delay_task', mulator,
+                Async('drf_mulator.tasks.delay_task', mulator,
                       q_options={
-                          'hook': 'mulator.tasks.delay_hook',
+                          'hook': 'drf_mulator.tasks.delay_hook',
                       }).run()
             else:
                 func(*args, **kwargs)
