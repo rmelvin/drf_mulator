@@ -7,5 +7,5 @@ setup(name='drf-mulator',
       description='Django Rest Framework API Emulator',
       author='Reggie Melvin',
       author_email='rmelvin09@hotmail.com',
-      packages=['mulator'],
+      packages=['drf_mulator'],
      )
