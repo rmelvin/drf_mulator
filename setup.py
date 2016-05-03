@@ -8,4 +8,5 @@ setup(name='drf-mulator',
       author='Reggie Melvin',
       author_email='rmelvin09@hotmail.com',
       packages=['drf_mulator'],
-     )
+      install_requires=['django>=1.7'],
+      )
